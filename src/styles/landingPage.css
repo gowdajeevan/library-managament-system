@@ -1,0 +1,43 @@
+body{
+    /* background-color:	#f8f2bd; */
+    background-image: url('https://img.freepik.com/premium-photo/blurred-bookshelf-many-old-books-book-shop-library_36051-477.jpg?w=2000');
+}
+.selectLoginType {
+    height: 350px;
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 150px;
+    background-color:white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+}
+.images img{
+    height: 100px;
+    width: 100px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+#img1 {
+    margin-right: 120px;
+    border: 3px solid orange;
+    border-radius: 50%;
+}
+#img2 {
+    margin-left: 120px;
+    border: 3px solid green;
+    border-radius: 50%;
+}
+
+#admin_button button{
+    padding: 10px 30px;
+    border-color: orange;
+    margin-right: 100px;
+}
+#user_button button{
+    padding: 10px 35px;
+    border-color: green;
+    margin-left: 100px;
+}
+
