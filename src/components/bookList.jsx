@@ -1,9 +1,10 @@
 import '../styles/bookList.css'
 import { useEffect, useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,useLocation } from 'react-router-dom';
 
 const BookList = () => {
     let [books,setBooks]=useState([])
+    let location=useLocation()
     useEffect(()=>{
         let fetchData=async()=>{
             let response=await fetch("http://localhost:2000/books")
@@ -22,11 +23,16 @@ const BookList = () => {
     }
     let navegate=useNavigate();
     let read=(id)=>{
-        navegate(`/admin/book-list/${id}`)
+        if(location.pathname == '/admin/book-list'){
+            navegate(`/admin/book-list/${id}`)
+        }
+        else{
+            navegate(`/user/book-list/${id}`)
+        }
     }
     return ( 
         <div className="bookList">
-            <h1>Book List: {books.length}</h1>
+            <h1 style={{marginTop:"0px",textAlign:"center"}}>Book List: {books.length}</h1>
             <div className="books_section">
                 {books.map(data=>(
                     <div className="book_card">
@@ -34,12 +40,12 @@ const BookList = () => {
                         <img src={data.thumbnailUrl} alt="" />
                        </div>
                        <div className="book-details">
-                       <h1>{data.title} </h1>
+                       <h3>{data.title} </h3>
                         <h6>PageCount:{data.pageCount} </h6>
                         <h6><b>Authors:</b> {data.authors}</h6>
                         <h6><b>category:</b>{data.categories} </h6>
                         <button  onClick={()=>read(data.id)}>Read more</button>
-                        <button style={{marginLeft:"20px"}} onClick={()=>handleDelete(data.id,data.title)}>Delete</button>
+                        { location.pathname == '/admin/book-list' && <button style={{marginLeft:"20px"}} onClick={()=>handleDelete(data.id,data.title)}>Delete</button>}
                        </div>
                     </div>
                 )  )}

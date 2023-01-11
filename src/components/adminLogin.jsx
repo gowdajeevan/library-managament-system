@@ -19,7 +19,7 @@ const  AdminLogin=()=>{
     return (
         <div className="adminlogin">
             <div className="admin_form">
-                <h1>Login As Admin</h1>
+                <h1 style={{color:"orangered"}}>Login As Admin</h1>
                 <div className="form_input">
                     <form onSubmit={login}>
                         <div className="user_mail">

@@ -7,21 +7,21 @@
     color: black;
     font-size: large;
     padding: 5px;
-    color: yellow;
+    color: white;
 }
 .admin_navbar{
-    background-color:rgb(13, 42, 13);
+    background-color:darkorange;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 100px;
-    color: red;
+    color: white;
 }
 .logout button{
     padding:7px 20px;
     border-style: none;
-    border-radius: 15px;
-    color:red;
+    border-radius: 20px;
+    color:white;
     font-size:large;
-    background-color: rgb(13, 42, 13);
+    background-color: darkorange;
 }

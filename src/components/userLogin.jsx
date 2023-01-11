@@ -4,7 +4,6 @@ const UserLogin = () => {
     let navigate=useNavigate()
     let login=()=>{
         navigate('/user/')
-
     }
     return ( 
         <div className="userlogin">

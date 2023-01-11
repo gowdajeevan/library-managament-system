@@ -12,7 +12,7 @@ const ReadBook = () => {
         fetchData()
     });
     return ( 
-        <div style={{border:"1px solid black", margin:"auto", width:"80%", marginTop:"40px", padding:"30px" }} className="readBook">
+        <div style={{border:"1px solid black", margin:"auto", width:"80%", marginTop:"40px", padding:"30px", background:"white" }} className="readBook">
             <h1 style={{textAlign:"center"}}>Read Book</h1>
             <h2 style={{color:"green"}}>{book.title}</h2>
             <p style={{color:"blue"}}>{book.shortDescription}</p>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import '../styles/addbook.css'
 const AddBook = () => {
     //title,catrgories,authors,pageCount,shortDescription,longDescription,thumbnailUrl
     let [title,settitle]=useState("")
@@ -23,32 +24,29 @@ const AddBook = () => {
     }
     return ( 
         < div className="addbook">
-            <h1>Add a book</h1>
+            <h1 id="add_book_heading">Add a book</h1>
             < div className="form">
                 <form action="" onSubmit={handleSubmit}>
                     < div className="title">
-                        <input type="text" required placeholder="title" value={title} onChange={(e)=>settitle(e.target.value)} />
-                    </ div>
-                    < div className="authors">
+                        <input style={{marginRight:"25px"}} type="text" required placeholder="title" value={title} onChange={(e)=>settitle(e.target.value)} />
                         <input type="text" required placeholder="authors" value={authors} onChange={(e)=>setauthors(e.target.value)}/>
                     </ div>
-
                     < div className="categories">
-                    <input type="text" required placeholder="categories" value={catrgories}  onChange={(e)=>setcatrgories(e.target.value)}/>
-                    </ div>
-                    < div className="pageCount">
-                       <input type="number" required placeholder="pagecount" value={pageCount}  onChange={(e)=>setpageCount(e.target.value)} /> 
+                    <input style={{marginRight:"25px"}} type="text" required placeholder="categories" value={catrgories}  onChange={(e)=>setcatrgories(e.target.value)}/>
+                    <input type="number" required placeholder="pagecount" value={pageCount}  onChange={(e)=>setpageCount(e.target.value)} /> 
                     </ div>
                     < div className="shortDescription">
-                        <textarea placeholder="shortDescription" cols="30" rows="3" value={shortDescription}  onChange={(e)=>setshortDescription(e.target.value)}></textarea>
+                        <textarea placeholder="shortDescription" cols="50" rows="3" value={shortDescription}  onChange={(e)=>setshortDescription(e.target.value)}></textarea>
                     </ div>
                     < div className="longDescription">
-                        <textarea placeholder="longDescription" cols="30" rows="10" value={longDescription}  onChange={(e)=>setlongDescription(e.target.value)}></textarea>    
+                        <textarea placeholder="longDescription" cols="50" rows="10" value={longDescription}  onChange={(e)=>setlongDescription(e.target.value)}></textarea>    
                     </ div>
-                    < div className="thumbnailUrl">
+                    < div style={{textAlign:"left", marginLeft:"20px"}} className="thumbnailUrl">
                         <input type="text" placeholder="thumbnailUrl" required value={thumbnailUrl}  onChange={(e)=>setthumbnailUrl(e.target.value)} />    
                     </ div>
-                    <button className="button">Add Book</button>
+                    <div style={{textAlign:"left", marginLeft:"20px"}} className="formbutton">
+                        <button className="button">Add Book</button>
+                    </div>
                 </form>
             </ div>
         </ div>

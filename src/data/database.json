@@ -7012,24 +7012,14 @@
       "categories": []
     },
     {
-      "title": "EJB 3 in Action, Second Edition",
-      "authors": "jeevan",
-      "catrgories": "Java",
-      "pageCount": "5246",
-      "shortDescription": "Building on the bestselling first edition, EJB 3 in Action, Second Edition tackles EJB 3.1 head-on,",
-      "longDescription": "The EJB 3 framework was a major advancement for Java EE developers, providing a consistent, easy to use model to create and extend applications. EJB 3 incorporates a POJO programming model and Java 5 annotations, along with the Java Persistence API (JPA), a standard for object-relational mapping. EJB 3.1, the latest version, adds full support for Context and Dependency Injection (CDI), the new standard for type-safe dependency injection for Java EE. With EJB 3.1 you create true object-oriented applications that are easy to write, maintain, and extend.    Building on the bestselling first edition, EJB 3 in Action, Second Edition tackles EJB 3.1 head-on, through numerous code samples, real-life scenarios, and illustrations. This book is a fast-paced tutorial for Java EE 6 business component development using EJB 3.1, JPA 2 and CDI. Besides covering the basics of EJB 3.1, this book includes in-depth EJB 3.1 internal implementation details, best practices, design patterns, and performance tuning tips. The book also discusses using open source frameworks like Seam and Spring with EJB 3.1.\",\n",
-      "thumbnailUrl": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202211/b916e47a-aae2-4879-ba55-28be87270810-one_one.jpg?VersionId=6wZsLZuAaeAJruE9P1YB3lwQyyxnnGD7",
+      "title": "wings of fire",
+      "authors": "APJ Abdul Kalam",
+      "catrgories": "NA",
+      "pageCount": "424",
+      "shortDescription": "bla..................bla....................bal",
+      "longDescription": "bla...................bla..................bla",
+      "thumbnailUrl": "na",
       "id": 797
-    },
-    {
-      "title": "d",
-      "authors": "d",
-      "catrgories": "g",
-      "pageCount": "5",
-      "shortDescription": "",
-      "longDescription": "",
-      "thumbnailUrl": "b",
-      "id": 798
     }
   ],
   "users": [

@@ -4,6 +4,7 @@ import LandingPage from './components/landingPage';
 import AdminLogin from './components/adminLogin';
 import UserLogin from './components/userLogin';
 import AdminHome from './components/adminhome';
+import UserPortal from './components/userPortail';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
           <Route path='/admin-login' element={<AdminLogin/>} />
           <Route path='/user-login' element={<UserLogin/>} />
           <Route path='/admin/*' element={<AdminHome/>} />
+          <Route path='/user/*' element={<UserPortal />} />
         </Routes>
       </BrowserRouter>
     </div>

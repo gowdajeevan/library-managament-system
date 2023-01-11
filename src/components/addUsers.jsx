@@ -19,7 +19,7 @@ const AddUsers = () => {
     }
     return ( 
         <div className="addusers">
-            <h1>Add new user</h1>
+            <h1 style={{textAlign:"center"}}>Add new user</h1>
             <div className="form" onSubmit={handleSubmit}>
                 <form action="" >
                     <div className="username">

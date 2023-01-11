@@ -7,8 +7,8 @@
     margin: 30px auto;
     /* justify-content: space-evenly; */
     border-radius: 20px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .book_card button,.user button{
     background-color: white;
@@ -34,20 +34,5 @@
     width: 200px;
     height: 250px;
     padding-top: 30px;
-    
-}
-.user{
-    border: 1px solid blueviolet;
-    /* box-shadow: 10px 10px  8px blueviolet; */
-    /* box-shadow: -10px -10px  8px blueviolet; */
-    width: 50%;
-    margin: 30px auto;
-    padding: 0px 30px 20px;
-    border-radius: 20px;
-    background-color:darkolivegreen;
-    color: rgb(234, 132, 7);
-}
-
-#ul{
-    text-shadow: 5px 5px 4px blueviolet;
+    border-radius: 50px;
 }

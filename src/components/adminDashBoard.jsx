@@ -1,7 +1,7 @@
 const AdminDashBoard = () => {
     return ( 
         <div className="admindashboard">
-            <h1>welcome</h1>
+            <h1 style={{textAlign:"center"}}>welcome</h1>
         </div>
      );
 }
