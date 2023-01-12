@@ -19,8 +19,16 @@ const  AdminLogin=()=>{
     return (
         <div className="adminlogin">
             <div className="admin_form">
-                <h1 style={{color:"orangered"}}>Login As Admin</h1>
+                <div className="admin_form_heading">
+                    <h1 style={{color:"white", padding:"0px 20px"}}>Login As Admin</h1>
+                </div>
+                <div className="line">
+
+                </div>
                 <div className="form_input">
+                    <div className="admin_form_image">
+                        <img id='img1' src="login_image.jpg" alt="" />
+                    </div>
                     <form onSubmit={login}>
                         <div className="user_mail">
                         <label style={{fontSize:"large"}} htmlFor="">Email :</label>
