@@ -4,7 +4,7 @@ const AdminNavbar = () => {
     return ( 
         <div className="admin_navbar">
             <div className="name">
-                <h2>AdminPortal</h2>
+                <h2 style={{color:"black"}}>AdminPortal</h2>
             </div>
             <div className="contents">
                 <ul>

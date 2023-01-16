@@ -3,7 +3,7 @@ const UserNavbar = () => {
     return ( 
         <div className="admin_navbar">
             <div className="name">
-                <h2>AdminPortal</h2>
+                <h2 style={{color:"black"}}>UserPortal</h2>
             </div>
             <div className="contents">
                 <ul>

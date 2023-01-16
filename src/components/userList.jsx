@@ -21,12 +21,14 @@ const UserList = () => {
                 <div className="user_section">
                     {user.map( data=>(
                         <div className="user">
-                            <h1><b>Id: </b>{data.id} </h1>
-                        <h4><b>Name: </b>{data.name}</h4>
-                        <h4><b>age: </b>{data.age}</h4>
-                        <h4><b>phonenumber: </b>{data.phone}</h4>
-                        <h4><b>email: </b>{data.email}</h4>
+                        <div className="middle_border">
+                        <p style={{textAlign:"center",paddingBottom:"10px" ,fontSize:"xx-large", borderBottom:"2px solid orange"}}>{data.name}</p>
+                        <p>ID : {data.id} </p>
+                        <p>Age : {data.age}</p>
+                        <p>PhoneNumber : {data.phone}</p>
+                        <p>Email : {data.email}</p>
                         <button onClick={()=>handleRemove(data.id,data.name)}>Remove</button>
+                        </div>
                         </div>
                     ) )}
                 </div>

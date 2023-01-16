@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import '../styles/addUsers.css'
 const AddUsers = () => {
     let [name,setname]=useState("")
     let [age,setage]=useState("")
@@ -20,7 +21,7 @@ const AddUsers = () => {
     return ( 
         <div className="addusers">
             <h1 style={{textAlign:"center"}}>Add new user</h1>
-            <div className="form" onSubmit={handleSubmit}>
+            <div className="userform" onSubmit={handleSubmit}>
                 <form action="" >
                     <div className="username">
                         <input type="text" required placeholder="user name" value={name} onChange={(e)=>setname(e.target.value)} />

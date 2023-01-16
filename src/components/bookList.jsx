@@ -32,7 +32,7 @@ const BookList = () => {
     }
     return ( 
         <div className="bookList">
-            <h1 style={{marginTop:"0px",textAlign:"center"}}>Book List: {books.length}</h1>
+            <h1 style={{margin:"15px 0px",textAlign:"center"}}>Book List: {books.length}</h1>
             <div className="books_section">
                 {books.map(data=>(
                     <div className="book_card">
@@ -40,12 +40,16 @@ const BookList = () => {
                         <img src={data.thumbnailUrl} alt="" />
                        </div>
                        <div className="book-details">
-                       <h3>{data.title} </h3>
-                        <h6>PageCount:{data.pageCount} </h6>
-                        <h6><b>Authors:</b> {data.authors}</h6>
-                        <h6><b>category:</b>{data.categories} </h6>
-                        <button  onClick={()=>read(data.id)}>Read more</button>
-                        { location.pathname == '/admin/book-list' && <button style={{marginLeft:"20px"}} onClick={()=>handleDelete(data.id,data.title)}>Delete</button>}
+                        <p style={{textAlign:"center",fontSize:"xxx-large"}}>{data.title} </p>
+                        <p>PageCount : {data.pageCount} </p>
+                        <p>Authors : {data.authors}</p>
+                        <p>Category : {data.categories} </p>
+                        <div className="readmorebut">
+                        <button onClick={()=>read(data.id)}>Read more</button>
+                        </div>
+                       <div className="bookdeletebutton">
+                       { location.pathname == '/admin/book-list' && <button style={{marginLeft:"20px"}} onClick={()=>handleDelete(data.id,data.title)}>Delete</button>}
+                       </div>
                        </div>
                     </div>
                 )  )}

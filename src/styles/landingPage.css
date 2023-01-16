@@ -1,6 +1,9 @@
 body{
     /* background-color:	#f8f2bd; */
-    background-image: url('https://c8.alamy.com/comp/R18TDD/e-book-reader-books-and-tablet-library-background-3d-illustration-success-knowlage-concept-R18TDD.jpg');
+    background-image: url('http://www.golegal.co.za/wp-content/uploads/2017/08/Library-Solutions.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 .selectLoginType {
     height: 350px;

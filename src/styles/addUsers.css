@@ -1,0 +1,22 @@
+.userform{
+    padding: 80px 40px;
+    margin: auto;
+    margin-top: 40px;
+    width: 300px;
+    background-image: url('https://wallpaperaccess.com/full/5276927.jpg');
+    text-align: center;
+}
+.userform input{
+    width: 200px;
+    margin: 10px 0px;
+    padding: 8px;
+    border: 1px solid black;
+    outline: none;
+    font-size: large;
+}
+.userform button{
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: darkorange;
+    color: white;
+}
